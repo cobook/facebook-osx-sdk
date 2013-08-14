@@ -114,7 +114,7 @@ static NSString *const FBexpirationDatePropertyName = @"expirationDate";
     if (self) {
         _requests = [[NSMutableSet alloc] init];
         _lastAccessTokenUpdate = [[NSDate distantPast] retain];
-        _frictionlessRequestSettings = [[FBFrictionlessRequestSettings alloc] init];
+        //_frictionlessRequestSettings = [[FBFrictionlessRequestSettings alloc] init];
         _tokenCaching = [[FBSessionManualTokenCachingStrategy alloc] init];        
         self.appId = appId;
         self.sessionDelegate = delegate;
