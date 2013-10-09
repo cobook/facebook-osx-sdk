@@ -23,18 +23,6 @@
 #import "FBSession+Internal.h"
 #import "FBUtility.h"
 
-static NSString* kDialogBaseURL = @"https://m." FB_BASE_URL "/dialog/";
-static NSString* kGraphBaseURL = @"https://graph." FB_BASE_URL "/";
-static NSString* kRestserverBaseURL = @"https://api." FB_BASE_URL "/method/";
-
-static NSString* kFBAppAuthURLScheme = @"fbauth";
-static NSString* kFBAppAuthURLPath = @"authorize";
-static NSString* kRedirectURL = @"fbconnect://success";
-
-static NSString* kLogin = @"oauth";
-static NSString* kApprequests = @"apprequests";
-static NSString* kSDKVersion = @"2";
-
 // If the last time we extended the access token was more than 24 hours ago
 // we try to refresh the access token again.
 static const int kTokenExtendThreshold = 24;
